@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import sky.pro.springkorzina.hwkorzina.service.OnlineStoreService;
 import sky.pro.springkorzina.hwkorzina.service.impliments.OnlineStoreServiceImpl;
 
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/order")
 public class OnlineStoreController {
-    private final OnlineStoreServiceImpl onlineStoreService;
+    private final OnlineStoreService onlineStoreService;
 
     public OnlineStoreController(OnlineStoreServiceImpl onlineStoreService) {
         this.onlineStoreService = onlineStoreService;
